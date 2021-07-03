@@ -1,0 +1,510 @@
+
+
+
+body{
+  background-image: url(../media/fondoBlur.jpg);
+}
+
+.tipografia{
+  font-family: 'Farro', sans-serif;
+}
+
+/****HEADER***/
+
+.header {
+  width: 100%;
+  /*background-color: rgb(153, 153, 153);*/
+  position: fixed;
+  background-color: rgb(58, 58, 58);
+  a{
+      color: white;
+      text-decoration: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .titulo__Menu{
+    color: azure;
+    font-weight: bolder;
+  }
+  
+}
+
+header{
+  
+  label{
+    display: none;
+    width: 30px;
+    padding: 10px;
+    border-left: 1px solid white;
+      
+    label:hover{
+      cursor: pointer;
+      /*background-color:rgb(112, 112, 112) ;*/
+      background-color: rgb(58, 58, 58);
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .isologo {    
+    padding: 10px;
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+
+    span{
+      display: inline-block;
+      width: 100px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.menu ul{
+  display: flex;
+
+  li{
+    display: inline-block;
+    /*background-color:rgb(153, 153, 153);*/
+    background-color: rgb(58, 58, 58);
+    padding: 0,5rem 1rem; 
+    width: 20% auto;
+    margin: 15px; 
+
+    a{
+      font-family: 'Farro', sans-serif;
+      text-decoration: none;
+      display: block;
+      transition: all 0.4s linear;
+      padding: 0,5rem 1rem;
+    }
+
+    ul{
+      position: absolute;
+      display: none;
+    }
+
+    li:hover> ul{
+      display: block;
+      background-color: #999999
+    }
+
+    a:hover{
+      color: #707070;;
+    }
+
+    ul>li{
+      list-style-type: none;
+      display: block;
+    }
+  }
+}
+
+.redesSociales {
+  min-width: 150px;
+
+  a {
+    display: inline-block;
+    padding: 10px;
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+/***END HEADER***/
+
+/***MAIN***/
+.banner__Container{
+  display: flex;
+  justify-content: center;
+
+  .banner__tamaño{
+    max-width: 700px;
+    width: 80%;
+    min-width: 200px;
+    margin-top: 220px
+  } /***BEM**/
+}
+
+.secciones__contenedor{
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.seccion {
+  flex-basis: 33%;
+
+  .seccion__tamaño {
+    max-width: 500px;
+    width: 80%;
+    min-width: 200px;
+  }
+
+}
+/***END MAIN***/
+
+
+/**** FOOTER *****/
+/***footer realizado con grid**/
+
+footer {
+  /*background: linear-gradient(90deg, rgb(104, 104, 104), 
+  #ccc);*/
+  background-color: rgb(58, 58, 58);
+  padding: 10px;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  /*background: linear-gradient(90deg, rgb(104, 104, 104), #ccc);*/
+  background-color: rgb(58, 58, 58);
+  bottom: 0;
+
+  span{
+    font-weight: bold;
+    color: white;
+  }
+  
+  h4 a{
+    color: white;
+    text-decoration: none;
+  } 
+}
+/***footer realizado con grid**/
+  /**** END FOOTER *****/
+
+
+
+  /***PAGINAS SECUNDARIAS***/
+
+.titulosSecundarios{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  padding: 200px 200px 50px 200px;
+  
+  
+}
+
+h1{
+  color: rgb(58, 58, 58);
+  font-family: 'Farro', sans-serif;
+  font-size: 50px;
+  margin-left: 25%;
+  padding: 0px 0px 20px 0px;
+}
+
+h2{
+  
+  font-family: 'Farro', sans-serif;
+  font-size: 20px;
+  margin-left: 24%;
+  color: rgb(146, 146, 146);
+  font-style: italic;
+}
+
+#encabezados{
+  color: rgb(0, 0, 0);
+  border-collapse: collapse ;
+  
+  table{
+    background-color: silver;
+    font-family: 'Farro', sans-serif;
+    width: 70%;
+  }
+  
+  table,th,td{
+    border:solid 1px black;
+    padding: 0;
+    
+  }
+}
+
+.productos.container {
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.productoPrincipal{
+  display: flex;
+  flex-direction: column;
+
+  img{
+    width: 70%;
+    min-width: 280px;
+    margin: 20px 0px;
+  }
+}
+
+.productosSecundarios {
+  flex-basis: 25%;
+  
+  a:hover img{
+    transform:scale(1.5,1.5);
+   
+  }
+
+  img{
+    /*margin-bottom: 100px;*/
+    width: 80%;
+    max-width: 200px;
+    min-width: 200px;
+  }
+
+}
+
+.caracteristicas{
+  color:rgb(0, 0, 0);
+}
+
+
+.botonCompra{
+  display: flex;
+  background-color: greenyellow;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 4px solid rgb(188, 252, 93);
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgb(207, 247, 148) ;
+  text-align: center;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  margin: 10px 40px 60px;
+}
+
+.botonCompra:hover{
+  background-color: rgb(148, 211, 53);
+}
+
+#carrito {
+  font-weight: 700;
+}
+
+.botonProducto{
+  display: block;
+  background-color: greenyellow;
+  color: white;
+  max-width: 50%;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 4px solid rgb(188, 252, 93);
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgb(207, 247, 148) ;
+  text-justify: center;
+  transition-duration: 1.5s;
+  cursor: pointer;
+  margin: 5px 100px 5px ;
+}
+
+.botonProducto:hover{
+  background-color: rgb(148, 211, 53);
+}
+
+/****END PAGINAS SECUNDARIAS***/
+
+
+
+/****PAGINA CONTACTO***/
+/* a partir de aca empieza la pagina "contacto" y esta realizada con FlexBox*/
+.formulario{
+  color: rgb(30, 137, 156);
+  font-family: 'Farro', sans-serif ;
+ 
+}
+
+.tituloContacto{
+  padding: 200px 200px 50px;
+}
+.formulario{
+  margin: 40px 30px;
+}
+
+.formFlex{
+  margin: 40px 30px;
+}
+
+.consultaFlex{
+  margin: 40px 30px;
+}
+
+.cuadroConsulta{
+  width: 500px;
+  height: 200px;
+}
+
+h3{
+  color: rgb(30, 137, 156) ;
+  font-family: 'Farro', sans-serif ;
+}
+
+
+/*aca termina la pagina contacto*/
+
+/****MEDIAS QUERYS***/
+@media (min-width:846px) {
+  .tituloMenu__responsive{
+    display: none;
+    color: azure;
+  }
+  
+}
+
+@media (max-width:845px) {
+
+  .logo{
+    display: none;
+  }
+  
+ .redesSociales a{
+   display:block;
+   margin: 0px 0px 0px 50px;
+  }
+  .redesSociales a img{
+    width: 20px;
+    padding: 5px;
+  }
+
+  header label{
+    display: block;
+  }
+
+  header label img{
+    width: 50px;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 33%;
+  }
+ 
+
+  .menu ul {
+    flex-direction:column;
+    padding: 1px;
+  }
+
+  .menu ul li{
+    margin: 5px 100px 5px 0px;
+  }
+
+  .menu ul li a{
+    background-color: rgb(109, 109, 109);
+    border: 1px solid #fff; 
+    border-radius: 30px;
+    padding: 1px;
+    width: 100px;
+    text-align: center;
+    
+  }
+
+  .menu li:hover >ul{
+    display: none;
+  }  
+
+  .titulosSecundarios {
+    margin-left: 0%;
+    padding: 60px; 
+    
+  }
+
+  .banner__tamaño{
+    margin-top: 250px;
+  }
+
+  .productoPrincipal{
+    margin-top: 180px;
+    h1{
+      margin: 10%;
+    }
+  }
+
+  .botonProducto{
+    margin: 5px 3px 2px 80px ;
+  }
+
+  footer{
+    min-width: 430px;
+    padding: 0px;
+  }
+
+  .cuadroConsulta{
+    width: 300px;
+    height: 250px;
+   
+  }
+
+  .tituloContacto{
+    padding: 250px 5px 30px;
+    margin: 0px 0px 0px -80px;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+
+    label{
+      margin: 10px;
+    }
+  }
+}
+
+
+
+  
+
+@media (max-width: 1085px) {
+  .isologo span {
+    display: none;
+  }
+
+  .header .redesSociales {
+    display: none;
+  }
+
+  .redesSociales a{
+    padding: 0px;
+  }
+
+  .productosSecundarios a:hover img{
+    transform:none; 
+  }
+}
+
+@media (max-width: 1178px){
+  .redesSociales a{
+    padding:0px;
+  }
+}    
+
+@media (max-width: 1204px) {
+  .isologo span{
+    display: none;
+  }
+}
+
+
+
+
+
